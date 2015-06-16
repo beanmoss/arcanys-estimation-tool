@@ -25,8 +25,8 @@ $rest = function ($path, $controller) use ($app)
     $app->delete($path.'/{id}', $controller.'@destroy');
 };
 
-$rest('project', 'App\Http\Controllers\ProjectController');
-$rest('author', 'App\Http\Controllers\AuthorController');
-$rest('user-story', 'App\Http\Controllers\UserStoryController');
-$rest('task', 'App\Http\Controllers\TaskController');
-$rest('additional-time-requirement', 'App\Http\Controllers\AdditionalTimeRequirementController');
+$rest('projects', 'App\Http\Controllers\ProjectController');
+$rest('authors', 'App\Http\Controllers\AuthorController');
+$rest('user-stories', 'App\Http\Controllers\UserStoryController');
+$rest('tasks', 'App\Http\Controllers\TaskController');
+$rest('additional-time-requirements', 'App\Http\Controllers\AdditionalTimeRequirementController');
